@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasicDemo</string>
+    <string name="up_load">上传头像</string>
+</resources>

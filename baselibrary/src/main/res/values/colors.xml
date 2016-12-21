@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 黑色 -->
+    <color name="tc_black">#1E1E1E</color>
+    <color name="title_text">#555555</color>
+</resources>
