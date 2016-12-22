@@ -10,12 +10,14 @@ import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemChildClickListener;
+import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.lmz.baselibrary.ui.BaseActivity;
 import com.lmz.basicdemo.adapters.HistoryAdapter;
 import com.lmz.basicdemo.model.HistoryModle;
 import com.lmz.basicdemo.present.implPresenter.HistoryPresent;
 import com.lmz.basicdemo.present.implView.IHistoryView;
 import com.lmz.basicdemo.ui.UpLoadPicActivity;
+import com.lmz.basicdemo.ui.activitys.CityChooseActivity;
 
 import butterknife.BindView;
 
@@ -65,6 +67,12 @@ public class MainActivity extends BaseActivity implements IHistoryView {
             @Override
             public void SimpleOnItemChildClick(BaseQuickAdapter baseQuickAdapter, View view, int i) {
                 Toast.makeText(MainActivity.this, "删除，删除" + i, Toast.LENGTH_SHORT).show();
+            }
+        });
+        recycleView.addOnItemTouchListener(new OnItemClickListener() {
+            @Override
+            public void SimpleOnItemClick(BaseQuickAdapter baseQuickAdapter, View view, int i) {
+                startActivity(CityChooseActivity.class);
             }
         });
     }

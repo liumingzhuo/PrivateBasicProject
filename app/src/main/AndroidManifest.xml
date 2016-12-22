@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.UpLoadPicActivity"></activity>
+        <activity android:name=".ui.UpLoadPicActivity" />
+        <activity android:name=".ui.activitys.CityChooseActivity"></activity>
     </application>
 
 </manifest>
